@@ -642,7 +642,7 @@ textarea {
     border-radius: 50%;
     background-color: var(--footer-text-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: border 250ms var(--transition-timing), box-shadow 250ms var(--transition-timing), background-color 250ms var(--transition-timing);
+    transition: border 250ms var(--transition-timing), box-shadow 250ms var(--transition-timing), background-color 250ms var(--transition-timing), fill 250ms var(--transition-timing);
 }
 
 .close-icon {
@@ -685,8 +685,12 @@ textarea {
     color: var(--primary-text-color);
 }
 
+.name-label {
+    
+}
+
 .form-field label {
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
     font-size: 12px;
     line-height: 0.8;
     letter-spacing: 0.01em;
@@ -694,6 +698,7 @@ textarea {
 }
 
 .input-wrap {
+    margin-top: 4px;
     position: relative;
 }
 
@@ -714,6 +719,10 @@ textarea {
 
 .form-field input:focus + .modal-icon {
     fill: var(--accent-color);
+}
+
+.textarea-field {
+    margin-top: 4px;
 }
 
 .form-field textarea {
